@@ -118,7 +118,6 @@ Item {
                         parent.color = "#92d9f3"
                     }
                     onClicked: {
-                        console.log("login");
                         login();
                     }
                 }

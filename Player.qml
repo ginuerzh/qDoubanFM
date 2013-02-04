@@ -83,7 +83,7 @@ Rectangle {
                     height: 15
                     width: height + 5
                     fillMode: Image.PreserveAspectFit
-                    source: "unlike.png"
+                    source: "played.png"
                 }
                 Text {
                     id: played
@@ -131,13 +131,13 @@ Rectangle {
 
         Text {
             id: artistText
-            text: "Artist"
+            text: "douban"
             font.pointSize: 20
             verticalAlignment: Text.AlignVCenter
         }
         Text {
             id: albumTitle
-            text: "< Album > 2013"
+            text: "< douban.fm > 2013"
             font.pointSize: 12
         }
 
@@ -152,7 +152,7 @@ Rectangle {
                 width: parent.width - channelButton.width - parent.spacing
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 2
-                text: "Title"
+                text: "douban"
                 font.pointSize: 11
                 color: "green"
                 clip: true
@@ -452,7 +452,7 @@ Rectangle {
             return false;
         }
 
-        console.log("song list: " + songModel.count);
+        //console.log("song list: " + songModel.count);
 
         if (!player.rapidLoad) {
             return false;
